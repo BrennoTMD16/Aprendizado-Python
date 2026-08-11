@@ -1,4 +1,9 @@
-import api
+# import modules.api as api # Isso so procura arquivos na mesma pasta que o arquivo esta usando
+# from api import registar_produto # (IMPORTA FUNÇÃO ESPECIFICA DE OUTRO MODULO)
+
+from modules import api # Importa o arquivo de uma pasta especifica
+
+# from modules.api import registar_produto, registrar_produtos # Importa funções especifica de uma pasta especifica
 
 api.registar_produto("Arroz")
 print(api.cardapio)
