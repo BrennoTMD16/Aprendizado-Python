@@ -1,0 +1,35 @@
+produto = "Arroz"
+valor = 10
+texto = f"Produto registrado {produto} de R${valor}"
+print(texto)
+
+# Alterando a variavel várias vezes
+email = " EMAIL_TESTE@gmail.com"
+email = email.lower() # Deixa o texto em caixas baixas
+email = email.strip() # Retira os espaços do texto
+print(email)
+
+# Tamanho do texto
+tamanho = len(email)
+print(tamanho)
+
+# Posição
+posicao_arroba = email.find("@")
+print(posicao_arroba)
+
+# Pedaços de texto
+print(email[posicao_arroba])
+print(email[0:posicao_arroba])
+print(email[posicao_arroba:tamanho])
+
+# Trocar pedaço do texto
+novo_email = email.replace("gmail.com", "yahoo.com.br")
+print(novo_email)
+
+nome = "brenno teixeira"
+nome = nome.capitalize() # Deixa a primeira letra com letra Maiuscula
+print(nome)
+nome = nome.title() # Deixa toda primeira letra de cada palavra Maiscula
+print(nome)
+nome = nome.upper() # Deixa tudo em letra Maiuscula
+print(nome)
