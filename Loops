@@ -1,0 +1,22 @@
+#contador = 1
+#while contador <= 10:
+    #print(f"Contagem: {contador}")
+    #contador +=1
+
+# LOOPS
+
+#senha = "123"
+#tentativa_senha = ""
+ #while senha != tentativa_senha:
+    #tentativa_senha = input("Digite sua senha")
+    #if tentativa_senha != senha:
+        #print("Senha incorreta")
+    #else:
+        #print("Senha correta")
+
+numeros = [10, 50, 1, 2, 5, 23]
+for numero in numeros:
+    if numero == 1:
+        print("Existe numero 1")
+        continue # Pode usar o "break" ele  vai pausar o loop
+    print(numero)
