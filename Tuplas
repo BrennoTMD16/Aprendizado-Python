@@ -1,4 +1,5 @@
 tupla = ("Arroz", "Feijão", "Macarrão")
+# tupla[0] = "NaoPodeAlterarTupla"
 minhas_tuplas = [("Arroz", "Feijão", "Macarrão"), ("Carne", "Frango", "File")]
 # minhas_tuplas[0][1] = "NaoPodeAlterarTupla"
 print(minhas_tuplas[0][1])
