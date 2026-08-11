@@ -1,0 +1,28 @@
+cardapio = []
+
+# Registra um pedido individual
+def registar_produto(produto):
+    cardapio.append(produto)
+    print("Produto registrado:", produto)
+
+# Registra uma lista de pedidos
+def registrar_produtos(lista_produtos):
+    for produto in lista_produtos:
+        registar_produto(produto)
+
+def remover_produto(produto):
+    cardapio.remove(produto)
+    print("Produto removido: ", produto)
+
+# Teste
+registrar_produtos({
+    "Arroz",
+    "Feijão",
+    "Macarrão"
+})
+
+print(cardapio)
+
+remover_produto("Arroz")
+
+print(cardapio)
