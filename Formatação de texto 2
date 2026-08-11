@@ -1,0 +1,16 @@
+vendas = [500, 1000, 200, 1500]
+
+total_vendas = sum(vendas)
+print(f"Total vendas: {total_vendas}")
+maior_valor = max(vendas)
+print(f"Maior venda: R${maior_valor}")
+menor_valor = min(vendas)
+print(f"Menor venda: R${menor_valor}")
+media_vendas = total_vendas / len(vendas)
+print(f"Media vendas: R${media_vendas}")
+
+produtos = ["iphone", "airpod", "carregador"]
+existIphone = "iphone" in produtos
+print(f"Existe Iphone: {existIphone}")
+posicao_iphone = produtos.index("iphone")
+print(f"Posição Iphone: {posicao_iphone}")
