@@ -1,0 +1,5 @@
+# Precisa baixar a biblioteca pillow (pip install pillow)
+import qrcode
+
+imagem = qrcode.make("www.linkedin.com/in/brenno-teixeira-42683b2b3") # Link que vai redirecionar
+imagem.save("qr_linkedin.png") # Bota nome do arquivo da imagem
