@@ -3,3 +3,7 @@ tupla = ("Arroz", "Feijão", "Macarrão")
 minhas_tuplas = [("Arroz", "Feijão", "Macarrão"), ("Carne", "Frango", "File")]
 # minhas_tuplas[0][1] = "NaoPodeAlterarTupla"
 print(minhas_tuplas[0][1])
+
+lista_telas = [(1090, 1080), (2140, 1080)]
+for altura, largura in lista_telas:
+    print(f"Altura tela: {altura} Largura tela: {largura}")
