@@ -1,0 +1,19 @@
+nome = "brenno teixeira machado"
+email = "brennotmd9@gmail.com"
+
+nome = nome.title()
+
+posicao_arroba = email.find("@")
+servidor_email = email[posicao_arroba:]
+print(servidor_email)
+
+posicao_espaco = nome.find(" ")
+primeiro_nome = nome[:posicao_espaco]
+print(primeiro_nome)
+
+posicao_segundo_espaco = nome.find(" ", posicao_espaco + 1)
+sobrenome = nome[posicao_espaco + 1:posicao_segundo_espaco]
+print(sobrenome)
+
+terceiro_nome = nome[posicao_segundo_espaco + 1:]
+print(terceiro_nome)
