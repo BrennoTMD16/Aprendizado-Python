@@ -14,3 +14,21 @@ existIphone = "iphone" in produtos
 print(f"Existe Iphone: {existIphone}")
 posicao_iphone = produtos.index("iphone")
 print(f"Posição Iphone: {posicao_iphone}")
+
+produtos = ["iphone", "airpod", "carregador"]
+
+# Remover um item da lista
+print(produtos)
+produtos.remove("airpod") # Remove pelo o valor
+produtos.pop(-1) # Remove pela posição (o -1 remove a ultima posição da lista)
+print(produtos)
+
+# Adicionar um item na lista
+lista_produtos2 = ["mouse", "teclado", "monitor"]
+produtos.append("mcbook")
+print(produtos)
+# produtos.append(lista_produtos2) # Adiciona a lista dentro de outra lista
+produtos.extend(lista_produtos2) # Adiciona todos os itens de uma lista dentro de outra
+print(produtos)
+produtos.insert(0, "mousepad") # Adiciona um item em posição especifica da lista
+print(produtos)
