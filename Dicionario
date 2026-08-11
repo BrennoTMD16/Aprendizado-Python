@@ -1,5 +1,3 @@
-# DICIONARIO
-
 cardapio = ["Arroz", "Fejão", "Macarrão"] # Lista inicia no 0
 cardapio.append("Banana") # Adiciona no final da lista
 cardapio.insert(0, "Carne") # Adiciona em posição especifica da lista
