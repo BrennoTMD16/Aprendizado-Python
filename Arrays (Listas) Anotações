@@ -1,3 +1,5 @@
+# DICIONARIO
+
 cardapio = ["Arroz", "Fejão", "Macarrão"] # Lista inicia no 0
 cardapio.append("Banana") # Adiciona no final da lista
 cardapio.insert(0, "Carne") # Adiciona em posição especifica da lista
@@ -9,3 +11,37 @@ else:
     print("Nao tem arroz")
 
 print(cardapio)
+
+# TUPLAS 
+
+minhas_tuplas = [("Arroz", "Feijão", "Macarrão"), ("Carne", "Frango", "File")]
+# minhas_tuplas[0][1] = "NaoPodeAlterarTupla"
+print(minhas_tuplas[0][1])
+
+# Dicionario
+dados = {"nome":"Brenno", "idade":20}
+dados["idade"] = 21
+print(dados["idade"])
+
+#contador = 1
+#while contador <= 10:
+    #print(f"Contagem: {contador}")
+    #contador +=1
+
+# LOOPS
+
+#senha = "123"
+#tentativa_senha = ""
+ #while senha != tentativa_senha:
+    #tentativa_senha = input("Digite sua senha")
+    #if tentativa_senha != senha:
+        #print("Senha incorreta")
+    #else:
+        #print("Senha correta")
+
+numeros = [10, 50, 1, 2, 5, 23]
+for numero in numeros:
+    if numero == 1:
+        print("Existe numero 1")
+        continue # Pode usar o "break" ele  vai pausar o loop
+    print(numero)
