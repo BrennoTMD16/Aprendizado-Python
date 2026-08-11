@@ -1,28 +1,3 @@
-# DICIONARIO
-
-cardapio = ["Arroz", "Fejão", "Macarrão"] # Lista inicia no 0
-cardapio.append("Banana") # Adiciona no final da lista
-cardapio.insert(0, "Carne") # Adiciona em posição especifica da lista
-cardapio.remove("Arroz") # Remove da lista
-
-if "Arroz" in cardapio:
-    print("Tem arroz")
-else:
-    print("Nao tem arroz")
-
-print(cardapio)
-
-# TUPLAS 
-
-minhas_tuplas = [("Arroz", "Feijão", "Macarrão"), ("Carne", "Frango", "File")]
-# minhas_tuplas[0][1] = "NaoPodeAlterarTupla"
-print(minhas_tuplas[0][1])
-
-# Dicionario
-dados = {"nome":"Brenno", "idade":20}
-dados["idade"] = 21
-print(dados["idade"])
-
 #contador = 1
 #while contador <= 10:
     #print(f"Contagem: {contador}")
