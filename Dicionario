@@ -9,3 +9,15 @@ else:
     print("Nao tem arroz")
 
 print(cardapio)
+
+
+# Dicionario para DADOS
+
+dados = {"nome":"Brenno", "idade":20}
+dados["idade"] = 21
+print(dados["idade"])
+
+#contador = 1
+#while contador <= 10:
+    #print(f"Contagem: {contador}")
+    #contador +=1
