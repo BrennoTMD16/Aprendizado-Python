@@ -1,7 +1,9 @@
-produto = "Arroz"
-valor = 10
-texto = f"Produto registrado {produto} de R${valor}"
+produto = "Vinho"
+valor = 1_500 # Colocar o _ e apenas visual não altera o codigo
+texto = f"Produto registrado {produto} de R${valor:,.2f}"  # :, separa o numero por virgula
 print(texto)
+
+# valor:.2f Separa o valor em 2 casas decimais com o .
 
 # Alterando a variavel várias vezes
 email = " EMAIL_TESTE@gmail.com"
