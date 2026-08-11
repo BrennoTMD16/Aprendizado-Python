@@ -4,6 +4,7 @@ texto = f"Produto registrado {produto} de R${valor:,.2f}"  # :, separa o numero 
 print(texto)
 
 # valor:.2f Separa o valor em 2 casas decimais com o .
+# valor .1% Isso faz o numero aparecer em Porcentagem
 
 # Alterando a variavel várias vezes
 email = " EMAIL_TESTE@gmail.com"
