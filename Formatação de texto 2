@@ -32,3 +32,18 @@ produtos.extend(lista_produtos2) # Adiciona todos os itens de uma lista dentro d
 print(produtos)
 produtos.insert(0, "mousepad") # Adiciona um item em posição especifica da lista
 print(produtos)
+
+produtos.append("iphone")
+
+# Contar quantas vezes um item aparece na lista
+print(produtos.count("iphone"))
+
+# Ordenar uma lista
+produtos.sort() # Adiciona em ordem alfabetica (As letras maiusculas vem primeiro)
+print(produtos)
+
+vendas.sort() # Coloca do menor pro maior
+print(vendas)
+
+vendas.sort(reverse=True) # Coloca do maior pro menor
+print(vendas)
