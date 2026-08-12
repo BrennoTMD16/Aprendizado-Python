@@ -6,6 +6,11 @@ class Produto():
         self.valor = valor
 
     def postar(self):
+        for produto in cardapio:
+            if produto.nome == self.nome:
+                print("Já existe um produto desse postado")
+                return
+            
         cardapio.append(self)
 
     def deletar(self):
@@ -19,6 +24,7 @@ class Produto():
 
 
 arroz = Produto("Arrz")
+arroz.postar()
 arroz.postar()
 arroz.editar_valor(10)
 arroz.editar_nome("Arroz")
