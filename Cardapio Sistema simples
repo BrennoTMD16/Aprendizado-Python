@@ -1,0 +1,33 @@
+cardapio = []
+
+def adicionar_produto(produtoInfo):
+    if produtoInfo in cardapio:
+        print("Ja possui esse produto registrado")
+        return
+    
+    cardapio.append(produtoInfo)
+    print(f"Produto Adicionado: {produtoInfo["nome"]}")
+
+def remover_produto(nome):
+     for produtoInfo in cardapio:
+         if produtoInfo["nome"] == nome:
+            cardapio.remove(produtoInfo)
+            print(f"Produto Removido: {nome}")
+
+
+adicionar_produto({
+    "nome": "Arroz",
+    "valor": 0
+})
+
+adicionar_produto({
+    "nome": "Arroz",
+    "valor": 0
+})
+
+remover_produto("Arroz")
+
+adicionar_produto({
+    "nome": "Arroz",
+    "valor": 0
+})
