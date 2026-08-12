@@ -1,33 +1,25 @@
 cardapio = []
 
-def adicionar_produto(produtoInfo):
-    if produtoInfo in cardapio:
-        print("Ja possui esse produto registrado")
-        return
-    
-    cardapio.append(produtoInfo)
-    print(f"Produto Adicionado: {produtoInfo["nome"]}")
+class Produto():
+    def __init__(self, nome, valor=0):
+        self.nome = nome
+        self.valor = valor
 
-def remover_produto(nome):
-     for produtoInfo in cardapio:
-         if produtoInfo["nome"] == nome:
-            cardapio.remove(produtoInfo)
-            print(f"Produto Removido: {nome}")
+    def postar(self):
+        cardapio.append(self)
+
+    def editar_valor(self, valor):
+        self.valor = valor
+
+    def editar_nome(self, nome):
+        self.nome = nome
 
 
-adicionar_produto({
-    "nome": "Arroz",
-    "valor": 0
-})
+arroz = Produto("Arrz")
+arroz.postar()
+arroz.editar_valor(10)
+arroz.editar_nome("Arroz")
 
-adicionar_produto({
-    "nome": "Arroz",
-    "valor": 0
-})
-
-remover_produto("Arroz")
-
-adicionar_produto({
-    "nome": "Arroz",
-    "valor": 0
-})
+print(arroz.nome)
+print(arroz.valor)
+print(cardapio)
