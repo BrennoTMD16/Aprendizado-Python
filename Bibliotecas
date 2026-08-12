@@ -1,7 +1,18 @@
-import time, random
+import time, random, os
 
 print("Carregando...")
 numero_aleatorio = random.randint(1, 4)
 print("Aguarde: ", numero_aleatorio)
 time.sleep(numero_aleatorio)
 print("Finalizado")
+
+pasta_arquivo = os.getcwd() # Pasta onde esta rodando o codigo
+print(pasta_arquivo)
+
+lista_arquivos = os.listdir() # Todas as pastas que esta rodando o codigo
+print(lista_arquivos)
+ 
+arquivos_comandos = os.listdir("comandos") # Ler os arquivos de uma pasta especifica
+print(arquivos_comandos)
+
+os.rename("arquivos/falar.py")
