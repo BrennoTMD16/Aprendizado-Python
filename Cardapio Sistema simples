@@ -20,14 +20,21 @@ class Produto():
         self.valor = valor
 
     def editar_nome(self, nome):
+        for produto in cardapio:
+            if produto.nome == nome:
+                print("Já existe um produto com esse nome")
+                return
         self.nome = nome
 
 
 arroz = Produto("Arrz")
 arroz.postar()
-arroz.postar()
 arroz.editar_valor(10)
 arroz.editar_nome("Arroz")
+
+feijao = Produto("Feijao", 8)
+feijao.postar()
+feijao.editar_nome("Arroz")
 
 print(arroz.nome)
 print(arroz.valor)
