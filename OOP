@@ -1,0 +1,38 @@
+# Tutorial: https://www.youtube.com/watch?v=QAwNvlEd1aM
+class Canal:
+    def __init__(self, nome, descricao, inscritos):
+        self.nome = nome
+        self.descricao = descricao
+        self.inscritos = inscritos
+
+    def inscrever(self, quantidade=1):
+        self.inscritos += quantidade
+        print(f"Inscritos {canal_brenno.inscritos}")
+
+
+class CanalEmpresarial(Canal):
+    def __init__(self, nome, descricao, inscritos):
+        super().__init__(nome, descricao, inscritos)
+        # self.equipe = []
+        self._equipe = [] # Usa esse _ antes pra mostrar que não deve usar fora da função
+
+    @property
+    def getEquipe(self):
+        return self._equipe
+    
+    def adicionar_membro(self, membro):
+        if membro in self._equipe:
+            print("Esse membro já esta na equipe")
+            return
+        
+        self._equipe.append(membro)
+        print(f"Membro adicionado: {membro}")
+
+canal_brenno = Canal("Brenno", "Lindao", 0)
+canal_empresa = CanalEmpresarial("Youtube", "Descricao", 0)
+
+canal_empresa.adicionar_membro("Brenno")
+canal_empresa.adicionar_membro("Brenno")
+
+# print(canal_empresa.getEquipe()) Quando tem o @property em cima da função não precisa de ()
+print(canal_empresa.getEquipe) # Tem o @property
